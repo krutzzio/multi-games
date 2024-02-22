@@ -1,0 +1,149 @@
+@keyframes srainbowText {
+
+    0% {
+        background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+        background-size: 200% 100%;
+        background-position: 100% 0;
+    }
+
+    5% {
+        background-clip: text;
+        color: transparent;
+        background-position: 95% 0;
+    }
+
+    10% {
+        background-clip: text;
+        color: transparent;
+        background-position: 90% 0;
+    }
+
+    15% {
+        background-clip: text;
+        color: transparent;
+        background-position: 85% 0;
+    }
+
+    20% {
+        background-clip: text;
+        color: transparent;
+        background-position: 80% 0;
+    }
+
+    25% {
+        background-clip: text;
+        color: transparent;
+        background-position: 75% 0;
+    }
+
+    30% {
+        background-clip: text;
+        color: transparent;
+        background-position: 70% 0;
+    }
+
+    35% {
+        background-clip: text;
+        color: transparent;
+        background-position: 65% 0;
+    }
+
+    40% {
+        background-clip: text;
+        color: transparent;
+        background-position: 60% 0;
+    }
+
+    45% {
+        background-clip: text;
+        color: transparent;
+        background-position: 55% 0;
+    }
+
+    50% {
+        background-clip: text;
+        color: transparent;
+        background-position: 50% 0;
+    }
+
+    55% {
+        background-clip: text;
+        color: transparent;
+        background-position: 45% 0;
+    }
+
+    60% {
+        background-clip: text;
+        color: transparent;
+        background-position: 40% 0;
+    }
+
+    65% {
+        background-clip: text;
+        color: transparent;
+        background-position: 35% 0;
+    }
+
+    70% {
+        background-clip: text;
+        color: transparent;
+        background-position: 30% 0;
+    }
+
+    75% {
+        background-clip: text;
+        color: transparent;
+        background-position: 25% 0;
+    }
+
+    80% {
+        background-clip: text;
+        color: transparent;
+        background-position: 20% 0;
+    }
+
+    85% {
+        background-clip: text;
+        color: transparent;
+        background-position: 15% 0;
+    }
+
+    90% {
+        background-clip: text;
+        color: transparent;
+        background-position: 10% 0;
+    }
+
+    95% {
+        background-clip: text;
+        color: transparent;
+        background-position: 5% 0;
+    }
+
+    100% {
+        background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+        background-size: 200% 100%;
+        background-position: 0 0;
+    }
+}
+
+
+@keyframes rainbowText {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.colorRainbow {
+    background: linear-gradient(to right, #a855f7, #ec4899, #eab308);
+    background-clip: text;
+    animation: rainbowText 5s linear infinite;
+}
