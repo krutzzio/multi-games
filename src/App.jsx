@@ -14,9 +14,9 @@ function App() {
           <h1>Choose and <br /> <span className='colorRainbow text-transparent animate-gradient text-4xl'>PLAY!!!</span></h1>
         </header>
         <main className='w-full h-1/2  flex flex-col justify-center gap-8 text-xl pl-2'>
-          <h1 className={`${rainBow === "tiktak" ? `colorRainbow animate-gradient` : ``} hover:text-transparent cursor-pointer [word-spacing:-10px]`} onMouseEnter={() => setRainBow("tiktak")} onMouseLeave={() => setRainBow("")}>Tik Tak Toe</h1>
-          <h1 className={`${rainBow === "sprites" ? `colorRainbow animate-gradient` : ``} hover:text-transparent cursor-pointer`} onMouseEnter={() => setRainBow("sprites")} /*onMouseLeave={() => setRainBow("")}*/>Draw Sprites</h1>
-          <h1 className={`${rainBow === "memo" ? `colorRainbow animate-gradient` : ``} hover:text-transparent cursor-pointer`} onMouseEnter={() => setRainBow("memo")}>Memory</h1>
+          <h1 className={`${rainBow === "tiktak" ? `colorRainbow text-transparent animate-gradient` : ``} cursor-pointer [word-spacing:-10px]`} onMouseEnter={() => setRainBow("tiktak")} onMouseLeave={() => setRainBow("")}>Tik Tak Toe</h1>
+          <h1 className={`${rainBow === "sprites" ? `colorRainbow text-transparent animate-gradient` : ``} cursor-pointer`} onMouseEnter={() => setRainBow("sprites")} /*onMouseLeave={() => setRainBow("")}*/>Draw Sprites</h1>
+          <h1 className={`${rainBow === "memo" ? `colorRainbow text-transparent animate-gradient` : ``} cursor-pointer`} onMouseEnter={() => setRainBow("memo")}>Memory</h1>
         </main>
       </nav>
       <main className='col-span-8'>
