@@ -27,14 +27,23 @@ export function Sprite() {
         setColor(nuevoColor);
     };
 
+    const handleSize = (event) => {
+        let size = event.target.value;
+        if (size < 0) {
+            size = 0
+        }
+
+        setSize(size)
+    }
+
     return (
-        <div className='h-full '>
+        <div className='h-screen pb-16 overflow-auto'>
             <header className='text-6xl py-8 text-center'>
                 <h1>DRAW SPRITE</h1>
             </header>
             <main className='flex flex-col justify-center items-center gap-4'>
                 <label htmlFor="size">Canvas Size:</label>
-                <input className='border-4 border-black w-16' min="0" max="21" onChange={(e) => setSize(e.target.value)} type="number" />
+                <input className='border-4 border-black w-16' min="0" onChange={handleSize} type="number" />
                 <label htmlFor="colorPicker">Color:</label>
                 <input
                     className='w-16 h-16 border-4 border-black'
@@ -45,7 +54,7 @@ export function Sprite() {
                     onChange={handleColorChange}
                 />
                 <Table canvas={canvas} click={clickCell} mida={size} />
-                <button onClick={neteja}>Clean Sprite</button>
+                <button className="colorRainbow hover:text-transparent hover:animate-gradient" onClick={neteja}>Clean Sprite</button>
             </main>
         </div>
     )
