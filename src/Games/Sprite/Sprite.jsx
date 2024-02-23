@@ -34,7 +34,7 @@ export function Sprite() {
             </header>
             <main className='flex flex-col justify-center items-center gap-4'>
                 <label htmlFor="size">Canvas Size:</label>
-                <input className='border-4 border-black w-16' min="0" onChange={(e) => setSize(e.target.value)} type="number" />
+                <input className='border-4 border-black w-16' min="0" max="21" onChange={(e) => setSize(e.target.value)} type="number" />
                 <label htmlFor="colorPicker">Color:</label>
                 <input
                     className='w-16 h-16 border-4 border-black'

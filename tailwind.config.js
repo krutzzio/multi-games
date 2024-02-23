@@ -13,7 +13,7 @@ export default {
         },
       },
       animation: {
-        gradient: "gradient 1s linear infinite"
+        gradient: "gradient 2s linear infinite"
       }
     },
     plugins: [],
